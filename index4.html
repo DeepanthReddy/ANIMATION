@@ -1,0 +1,51 @@
+<html>
+    <head>
+        <title>BOX</title>
+        <style>
+            div{
+                position: relative;
+                background-color: cornflowerblue;
+                width: 200px;
+                height: 200px;
+                animation-name: left;
+                animation-duration: 4s;
+                animation-timing-function: ease-out;
+                animation-iteration-count: infinite;
+            }
+            @keyframes left {
+                0% {left: 0px;}
+                25% {background-color: blue; left: 500px;}
+                50% {background-color: chartreuse; left: 1000px;}
+                75% {background-color: chocolate; left: 500px;}
+                100% {background-color: blue; left: 0px;}
+            }
+            .second{
+                background-color: cornflowerblue;
+                width: 200px;
+                height: 200px;
+                margin-left: 1000px;
+                position: relative;
+                animation-name: right;
+                animation-duration: 4s;
+                animation-timing-function: ease-in-out;
+                animation-iteration-count: infinite;
+
+            }
+            @keyframes right {
+                0% {right: 0px;}
+                25% {background-color: blue; right: 500px;}
+                50% {background-color: chartreuse; right: 1000px;}
+                75% {background-color: chocolate; right: 500px;}
+                100% {background-color: blue; right: 0px;}
+            }
+           
+        </style>
+    </head>
+    <body>
+        <h1>MOVING LEFT TO RIGHT</h1>
+        <div></div>
+        <br>
+        <h1>MOVING RIGHT TO LEFT</h1>
+        <div class="second"></div>
+    </body>
+</html>
